@@ -57,15 +57,16 @@ class Store {
     }
     
     func findByTitle(keyword:String) {
+        var isItemFound:Bool = false
         for item in items{
             if(item.title.contains(keyword)){
-                print("""
-                [\(type(of: item))] \(item.info)
-                \(item.toString())
-                """)
-            }else{
-                print("Sorry, no matching item found!")
+                print("[\(type(of: item))] \(item.info)")
+                isItemFound = true
+                return
             }
+        }
+        if(isItemFound==false){
+            print("Sorry, no matching item found!")
         }
     }
     

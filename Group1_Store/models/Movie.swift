@@ -11,7 +11,7 @@ class Movie: Item {
     let runningTime: Int
 
     override var info: String {
-        return "\(title), $\(price) Running Time: \(runningTime) min"
+        return "\(title), $\(price)\nRunning Time: \(runningTime) min"
     }
 
     init(id: Int, title: String, price: Double, runningTime: Int) {

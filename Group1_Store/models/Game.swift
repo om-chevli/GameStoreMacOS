@@ -12,7 +12,7 @@ class Game: Item {
     let isMultiplayer: Bool
 
     override var info: String {
-        return "\(title), $\(price) Publisher: \(publisher) Is Multiplayer: \(isMultiplayer)"
+        return "\(title), $\(price)\nPublisher: \(publisher)\nIs Multiplayer: \(isMultiplayer)"
     }
 
     init(id: Int, title: String, price: Double, publisher: String, isMultiplayer: Bool) {
