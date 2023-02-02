@@ -41,17 +41,14 @@ class Customer {
     }
     
     func isEligibleForRefund(itemId:Int) -> Bool {
-        if(doesOwnsAItem(itemId: itemId)){
             var isEligible:Bool = false
             for item in itemsList{
-                if(item.minutesUsed<30){
+                if(item.id == itemId && item.minutesUsed<30){
                     isEligible = true
                 }
             }
             return isEligible
-        }else{
-            return false
-        }
+       
     }
     
     func removeItem(itemId:Int) {

@@ -11,5 +11,16 @@ let movie2 = Movie(id: 4, title: "The Lord of the Rings: The Return of the King"
 
 let store = Store(items: [game1, game2, movie1, movie2])
 
-store.findByTitle(keyword: "Kingdom")
+store.findByTitle(keyword: "The spo")
+store.findByTitle(keyword: "jsdfbh")
+store.buyItem(customer: customer1, itemId: 1)
+customer1.reloadAccount(amount: 20)
+store.buyItem(customer: customer1, itemId: 1)
+store.buyItem(customer: customer1, itemId: 3)
+store.buyItem(customer: customer1, itemId: 1)
+
+customer1.useItem(id: 3, numMinutes: 31)
+store.issueRefund(customer: customer1, itemId: 3)
+store.issueRefund(customer: customer1, itemId: 1)
+
 

@@ -29,7 +29,7 @@ class Store {
                 print("Purchase Success!")
                 itemToAdd.printReceipt(isRefund: false, amount: itemToAdd.price)
             }else{
-                print("Unable to purchase with id\(itemId)")
+                print("Item with item id \(itemId), does not exist.")
             }
         }else{
             print("Insufficient balance to purchase the item.")
@@ -59,7 +59,7 @@ class Store {
     func findByTitle(keyword:String) {
         var isItemFound:Bool = false
         for item in items{
-            if(item.title.contains(keyword)){
+            if(item.title.lowercased().contains(keyword.lowercased())){
                 print("[\(type(of: item))] \(item.info)")
                 isItemFound = true
                 return
