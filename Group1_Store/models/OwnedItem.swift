@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class OwnedItem: Item {
+    var minutesUsed: Int
+
+    init(item: Item, minutesUsed: Int) {
+        self.minutesUsed = minutesUsed
+        super.init(id: item.id, title: item.title, price: item.price)
+    }
+}
