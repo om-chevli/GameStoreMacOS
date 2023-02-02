@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80D582DC298C478F0073EFFE /* IsPurchasable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D582DB298C478F0073EFFE /* IsPurchasable.swift */; };
 		8F0C86D8298C3FC700B7F72E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C86D7298C3FC700B7F72E /* Item.swift */; };
 		8F0C86DA298C3FD500B7F72E /* OwnedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C86D9298C3FD500B7F72E /* OwnedItem.swift */; };
 		8F0C86DC298C3FE000B7F72E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C86DB298C3FE000B7F72E /* Game.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		80D582DB298C478F0073EFFE /* IsPurchasable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPurchasable.swift; sourceTree = "<group>"; };
 		8F0C86D7298C3FC700B7F72E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8F0C86D9298C3FD500B7F72E /* OwnedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnedItem.swift; sourceTree = "<group>"; };
 		8F0C86DB298C3FE000B7F72E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80D582DA298C477C0073EFFE /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				80D582DB298C478F0073EFFE /* IsPurchasable.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
 		8F0C86D6298C3F7600B7F72E /* models */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		8FF27EFC298C3AFF00C0F4E7 /* Group1_Store */ = {
 			isa = PBXGroup;
 			children = (
+				80D582DA298C477C0073EFFE /* protocols */,
 				8F0C86D6298C3F7600B7F72E /* models */,
 				8FF27EFD298C3AFF00C0F4E7 /* main.swift */,
 			);
@@ -150,6 +161,7 @@
 				8F0C86D8298C3FC700B7F72E /* Item.swift in Sources */,
 				8FF27EFE298C3AFF00C0F4E7 /* main.swift in Sources */,
 				8F0C86DA298C3FD500B7F72E /* OwnedItem.swift in Sources */,
+				80D582DC298C478F0073EFFE /* IsPurchasable.swift in Sources */,
 				8F0C86E0298C3FF600B7F72E /* Customer.swift in Sources */,
 				8F0C86DC298C3FE000B7F72E /* Game.swift in Sources */,
 				8F0C86DE298C3FEA00B7F72E /* Movie.swift in Sources */,
