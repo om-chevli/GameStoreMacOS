@@ -34,6 +34,7 @@ class Store {
         }else{
             print("Insufficient balance to purchase the item.")
         }
+        print("-------------------------")
     }
     
     func issueRefund(customer:Customer,itemId:Int){
@@ -54,6 +55,7 @@ class Store {
                 print("Customer has used this item for more than 30 minutes.")
             }
         }
+        print("-------------------------")
     }
     
     func findByTitle(keyword:String) {
@@ -62,16 +64,18 @@ class Store {
             if(item.title.lowercased().contains(keyword.lowercased())){
                 print("[\(type(of: item))] \(item.info)")
                 isItemFound = true
+                print("-------------------------")
                 return
             }
         }
         if(isItemFound==false){
             print("Sorry, no matching item found!")
         }
+        print("-------------------------")
     }
     
     //custom utility functions
-    func getPriceForItem(itemId:Int)->Double{
+     private func getPriceForItem(itemId:Int)->Double{
         var price:Double = 0.0
         let foundItem:Item? = getItemFromId(itemId: itemId)
         if(foundItem != nil){

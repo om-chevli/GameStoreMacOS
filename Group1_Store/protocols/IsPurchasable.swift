@@ -10,6 +10,4 @@ import Foundation
 protocol IsPurchasable {
     var info: String { get }
     func printReceipt(isRefund: Bool, amount: Double)
-    //custom utility function
-    func toString()
 }

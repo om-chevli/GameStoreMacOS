@@ -34,8 +34,4 @@ class Item: IsPurchasable {
             print("Purchase amount: $\(amount)")
         }
     }
-    
-    func toString() {
-        
-    }
 }

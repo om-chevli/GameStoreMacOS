@@ -18,8 +18,5 @@ class Movie: Item {
         self.runningTime = runningTime
         super.init(id: id, title: title, price: price)
     }
-    
-    override func toString(){
-        print("Length: \(runningTime)")
-    }
+
 }

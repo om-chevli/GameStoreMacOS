@@ -23,6 +23,7 @@ class Customer {
         balance += amount
         print("Your account has been reloaded with $\(amount)")
         print("New balance is \(balance)")
+        print("-------------------------")
     }
     
     //Custom Utility Functions
